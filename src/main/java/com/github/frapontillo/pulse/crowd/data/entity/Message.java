@@ -384,8 +384,6 @@ public class Message extends Entity {
         return number_cluster;
     }
     
-    
-    
     /**
      * Get the cluster number of the Message, according to the original source (Twitter, Facebook,
      * etc.)
@@ -395,23 +393,20 @@ public class Message extends Entity {
     public Integer getClusterKmeans() {
         return cluster_kmeans;
     }
-    
 
     /**
      * Set the cluster number the Message has in the original source.
      *
-     * @param number_cluster of the Message.
+     * @param cluster of the Message.
      */
     public void setCluster(Integer cluster) {
         this.number_cluster = cluster;
     }
-    
-    
-    
+
     /**
      * Set the cluster number the Message has in the original source.
      *
-     * @param number_cluster of the Message.
+     * @param clusterKmeans of the Message.
      */
     public void setClusterKmeans(Integer clusterKmeans) {
         this.cluster_kmeans = clusterKmeans;

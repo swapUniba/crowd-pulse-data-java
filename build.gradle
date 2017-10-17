@@ -15,8 +15,12 @@ repositories {
     }
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
-    compile 'com.github.swapUniba:pulse:0.0.3'
+    compile 'com.github.swapUniba:pulse:master-SNAPSHOT'
     compile('org.mongodb.morphia:morphia:1.0.1') {
         exclude module: 'org.mongodb:mongo-java-driver:3.0.2'
     }

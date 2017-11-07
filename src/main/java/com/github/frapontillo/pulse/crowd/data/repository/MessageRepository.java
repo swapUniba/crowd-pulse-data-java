@@ -75,7 +75,11 @@ public class MessageRepository extends Repository<Message, ObjectId> {
 
     public Message updateOrInsert(Message message) {
         Query<Message> queryOriginalId = createQuery().field("oId").equal(message.getoId());
-        getDs().updateFirst(queryOriginalId, message, true);
+        
+        if(queryOriginalId.countAll() > 0)
+        	getDs().delete(queryOriginalId);
+        
+        getDs().save(message);
         return message;
     }
 }

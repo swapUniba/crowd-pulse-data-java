@@ -50,7 +50,7 @@ public class PersonalDataRepository extends Repository<PersonalData, ObjectId> {
     }
 
     public PersonalData updateOrInsert(PersonalData personalData) {
-        Query<PersonalData> queryOriginalId = createQuery().field("oId").equal(personalData.getoId());
+        Query<PersonalData> queryOriginalId = createQuery().field("_id").equal(personalData.getId());
 
         if(queryOriginalId.countAll() > 0)
             getDs().delete(queryOriginalId);

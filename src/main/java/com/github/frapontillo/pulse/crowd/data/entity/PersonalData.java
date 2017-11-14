@@ -10,30 +10,21 @@ import org.mongodb.morphia.annotations.Indexed;
  */
 public class PersonalData extends Entity {
 
-    @Indexed private String oId;
     private String displayName;
     private String deviceId;
-    private long timestamp;
+    private Long timestamp;
     private String source;
-    private double latitude;
-    private double longitude;
-    private double speed;
-    private double accuracy;
+    private Double latitude;
+    private Double longitude;
+    private Double speed;
+    private Double accuracy;
     private String packageName;
     private String category;
-    private long foregroundTime;
+    private Long foregroundTime;
     private String state;
-    private long rxBytes;
-    private long txBytes;
+    private Long rxBytes;
+    private Long txBytes;
     private String networkType;
-
-    public String getoId() {
-        return oId;
-    }
-
-    public void setoId(String oId) {
-        this.oId = oId;
-    }
 
     public String getDisplayName() {
         return displayName;

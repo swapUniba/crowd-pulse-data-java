@@ -15,6 +15,8 @@ The available plugins are:
 * `profile-rx-fetch` to load profiles stored on a database in a reactive way (experimental)
 * `profile-persist` to save profiles in a database
 * `streamer` to make the elements flow untouched in the stream
+* `personaldata-fetch` to load personal data stored on a database 
+* `personaldata-persist` to save personal data in a database 
 
 The included packages are:
 

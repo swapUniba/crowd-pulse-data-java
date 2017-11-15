@@ -16,7 +16,9 @@ The available plugins are:
 * `profile-persist` to save profiles in a database
 * `streamer` to make the elements flow untouched in the stream
 * `personaldata-fetch` to load personal data stored on a database 
-* `personaldata-persist` to save personal data in a database 
+* `personaldata-persist` to save personal data in a database
+* `connection-fetch` to load contact stored on a database
+* `connection-persist` to save contact in a database
 
 The included packages are:
 

@@ -8,3 +8,5 @@ com.github.frapontillo.pulse.crowd.data.plugin.Streamer
 com.github.frapontillo.pulse.crowd.data.plugin.MessageFilter
 com.github.frapontillo.pulse.crowd.data.plugin.PersonalDataFetcher
 com.github.frapontillo.pulse.crowd.data.plugin.PersonalDataPersister
+com.github.frapontillo.pulse.crowd.data.plugin.ConnectionFetcher
+com.github.frapontillo.pulse.crowd.data.plugin.ConnectionPersister

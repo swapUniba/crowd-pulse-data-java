@@ -10,6 +10,7 @@ import java.util.List;
  */
 public class Connection extends Entity {
 
+    private String source;
     private String displayName;
     private String deviceId;
     private String contactName;
@@ -65,4 +66,11 @@ public class Connection extends Entity {
         this.contactPhoneNumber = contactPhoneNumber;
     }
 
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
+    }
 }

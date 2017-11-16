@@ -40,7 +40,7 @@ public class ConnectionFetcher extends IPlugin<Object, Connection, ConnectionFet
             @Override public void onCompleted() {
 
                 Observable<Connection> dbConnection = connectionRepository
-                        .find(parameters.getDisplayName());
+                        .find(parameters.getDisplayName(), parameters.getSource());
                 dbConnection.subscribe(subscriber);
             }
 
@@ -61,6 +61,7 @@ public class ConnectionFetcher extends IPlugin<Object, Connection, ConnectionFet
      */
     public class ConnectionFetcherOptions extends GenericDbConfig<ConnectionFetcher.ConnectionFetcherOptions> {
         private String displayName;
+        private String source;
 
         public String getDisplayName() {
             return displayName;
@@ -68,6 +69,14 @@ public class ConnectionFetcher extends IPlugin<Object, Connection, ConnectionFet
 
         public void setDisplayName(String displayName) {
             this.displayName = displayName;
+        }
+
+        public String getSource() {
+            return source;
+        }
+
+        public void setSource(String source) {
+            this.source = source;
         }
 
         @Override

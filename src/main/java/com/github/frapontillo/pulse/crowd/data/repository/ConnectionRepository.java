@@ -32,10 +32,13 @@ public class ConnectionRepository extends Repository<Connection, ObjectId> {
         return super.findBetweenKeys(from, to).order("date");
     }
 
-    public Observable<Connection> find(String displayName) {
+    public Observable<Connection> find(String displayName, String source) {
         Query<Connection> query = createQuery();
         if (displayName != null ) {
             query.field("displayName").equal(displayName);
+        }
+        if (source != null) {
+            query.field("source").equal(source);
         }
         query.order("displayName");
         return Observable.from(query.fetch());

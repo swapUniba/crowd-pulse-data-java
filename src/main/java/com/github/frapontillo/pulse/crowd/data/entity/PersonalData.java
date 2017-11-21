@@ -1,7 +1,5 @@
 package com.github.frapontillo.pulse.crowd.data.entity;
 
-import org.mongodb.morphia.annotations.Indexed;
-
 /**
  * PersonalData are data retrieved from user smartphone.
  * They can be data about GPS position, App information, network statistics, and so on.
@@ -25,6 +23,13 @@ public class PersonalData extends Entity {
     private Long rxBytes;
     private Long txBytes;
     private String networkType;
+    private Integer inVehicle;
+    private Integer onBicycle;
+    private Integer onFoot;
+    private Integer running;
+    private Integer still;
+    private Integer walking;
+    private Integer unknown;
 
     public String getDisplayName() {
         return displayName;
@@ -144,5 +149,61 @@ public class PersonalData extends Entity {
 
     public void setNetworkType(String networkType) {
         this.networkType = networkType;
+    }
+
+    public void setInVehicle(Integer inVehicle) {
+        this.inVehicle = inVehicle;
+    }
+
+    public Integer getInVehicle() {
+        return inVehicle;
+    }
+
+    public Integer getOnBicycle() {
+        return onBicycle;
+    }
+
+    public void setOnBicycle(Integer onBicycle) {
+        this.onBicycle = onBicycle;
+    }
+
+    public Integer getOnFoot() {
+        return onFoot;
+    }
+
+    public void setOnFoot(Integer onFoot) {
+        this.onFoot = onFoot;
+    }
+
+    public Integer getRunning() {
+        return running;
+    }
+
+    public void setRunning(Integer running) {
+        this.running = running;
+    }
+
+    public Integer getStill() {
+        return still;
+    }
+
+    public void setStill(Integer still) {
+        this.still = still;
+    }
+
+    public Integer getWalking() {
+        return walking;
+    }
+
+    public void setWalking(Integer walking) {
+        this.walking = walking;
+    }
+
+    public Integer getUnknown() {
+        return unknown;
+    }
+
+    public void setUnknown(Integer unknown) {
+        this.unknown = unknown;
     }
 }

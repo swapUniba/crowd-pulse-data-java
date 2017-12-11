@@ -29,6 +29,7 @@ public class PersonalData extends Entity {
     private Integer running;
     private Integer still;
     private Integer walking;
+    private Integer tilting;
     private Integer unknown;
 
     public String getDisplayName() {
@@ -205,5 +206,13 @@ public class PersonalData extends Entity {
 
     public void setUnknown(Integer unknown) {
         this.unknown = unknown;
+    }
+
+    public Integer getTilting() {
+        return tilting;
+    }
+
+    public void setTilting(Integer tilting) {
+        this.tilting = tilting;
     }
 }

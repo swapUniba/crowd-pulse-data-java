@@ -36,6 +36,7 @@ public class Message extends Entity {
     private Double sentiment;
     private Integer number_cluster;
     private Integer cluster_kmeans;
+    private String emotion;
 
 
     /**
@@ -426,5 +427,13 @@ public class Message extends Entity {
     @Override public String toString() {
         return getId().toString() + ":" + DateUtil.toISOString(getDate()) + getSource() + ":" +
                 StringUtil.ellipsize(getText(), 20);
+    }
+
+    public String getEmotion() {
+        return emotion;
+    }
+
+    public void setEmotion(String emotion) {
+        this.emotion = emotion;
     }
 }

@@ -25,6 +25,8 @@ public class Profile extends Entity implements Comparable<Profile> {
     private Double latitude;
     private Double longitude;
     private List<String> connections;
+    private List<Personality> personalities;
+    private List<Empathy> empathies;
 
     /**
      * Create a new Profile.
@@ -279,5 +281,37 @@ public class Profile extends Entity implements Comparable<Profile> {
             return this.getUsername().compareTo(o.getUsername());
         }
         return this.getSource().compareTo(o.getSource());
+    }
+
+    /**
+     * Get the personality list.
+     * @return the user personalities
+     */
+    public List<Personality> getPersonalities() {
+        return personalities;
+    }
+
+    /**
+     * Set the personality list.
+     * @param personalities the personalities
+     */
+    public void setPersonalities(List<Personality> personalities) {
+        this.personalities = personalities;
+    }
+
+    /**
+     * Get the empathy list.
+     * @return the user empathies
+     */
+    public List<Empathy> getEmpathies() {
+        return empathies;
+    }
+
+    /**
+     * Set the empathy list.
+     * @param empathies the empathies
+     */
+    public void setEmpathies(List<Empathy> empathies) {
+        this.empathies = empathies;
     }
 }

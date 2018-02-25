@@ -31,6 +31,7 @@ public class PersonalData extends Entity {
     private Integer walking;
     private Integer tilting;
     private Integer unknown;
+    private boolean share;
 
     public String getDeviceId() {
         return deviceId;
@@ -214,5 +215,13 @@ public class PersonalData extends Entity {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public boolean isShare() {
+        return share;
+    }
+
+    public void setShare(boolean share) {
+        this.share = share;
     }
 }

@@ -37,6 +37,7 @@ public class Message extends Entity {
     private Integer number_cluster;
     private Integer cluster_kmeans;
     private String emotion;
+    private boolean share;
 
 
     /**
@@ -435,5 +436,13 @@ public class Message extends Entity {
 
     public void setEmotion(String emotion) {
         this.emotion = emotion;
+    }
+
+    public boolean isShare() {
+        return share;
+    }
+
+    public void setShare(boolean share) {
+        this.share = share;
     }
 }

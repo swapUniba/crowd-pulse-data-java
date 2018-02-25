@@ -34,4 +34,44 @@ public class Personality extends Entity {
     public void setSource(String source) {
         this.source = source;
     }
+
+    public Double getOpenness() {
+        return openness;
+    }
+
+    public void setOpenness(Double openness) {
+        this.openness = openness;
+    }
+
+    public Double getConscientiousness() {
+        return conscientiousness;
+    }
+
+    public void setConscientiousness(Double conscientiousness) {
+        this.conscientiousness = conscientiousness;
+    }
+
+    public Double getExtroversion() {
+        return extroversion;
+    }
+
+    public void setExtroversion(Double extroversion) {
+        this.extroversion = extroversion;
+    }
+
+    public Double getAgreeableness() {
+        return agreeableness;
+    }
+
+    public void setAgreeableness(Double agreeableness) {
+        this.agreeableness = agreeableness;
+    }
+
+    public Double getNeuroticism() {
+        return neuroticism;
+    }
+
+    public void setNeuroticism(Double neuroticism) {
+        this.neuroticism = neuroticism;
+    }
 }

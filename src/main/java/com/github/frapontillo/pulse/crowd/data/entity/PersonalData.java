@@ -8,7 +8,7 @@ package com.github.frapontillo.pulse.crowd.data.entity;
  */
 public class PersonalData extends Entity {
 
-    private String displayName;
+    private String username;
     private String deviceId;
     private Long timestamp;
     private String source;
@@ -31,14 +31,6 @@ public class PersonalData extends Entity {
     private Integer walking;
     private Integer tilting;
     private Integer unknown;
-
-    public String getDisplayName() {
-        return displayName;
-    }
-
-    public void setDisplayName(String displayName) {
-        this.displayName = displayName;
-    }
 
     public String getDeviceId() {
         return deviceId;
@@ -214,5 +206,13 @@ public class PersonalData extends Entity {
 
     public void setTilting(Integer tilting) {
         this.tilting = tilting;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

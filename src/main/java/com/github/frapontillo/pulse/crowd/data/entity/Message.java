@@ -446,4 +446,12 @@ public class Message extends Entity {
     public void setShare(boolean share) {
         this.share = share;
     }
+
+    public String getStory() {
+        return story;
+    }
+
+    public void setStory(String story) {
+        this.story = story;
+    }
 }

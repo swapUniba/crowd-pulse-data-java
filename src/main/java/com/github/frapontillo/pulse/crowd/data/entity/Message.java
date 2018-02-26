@@ -19,6 +19,7 @@ import java.util.Set;
 public class Message extends Entity {
     @Indexed private String oId;
     private String text;
+    private String story;
     private String source;
     @Indexed private String fromUser;
     private List<String> toUsers;
@@ -31,13 +32,13 @@ public class Message extends Entity {
     private Double longitude;
     private Integer favs;
     private Integer shares;
+    private boolean share;
     private Set<Tag> tags;
     private List<Token> tokens;
     private Double sentiment;
     private Integer number_cluster;
     private Integer cluster_kmeans;
     private String emotion;
-    private boolean share;
 
 
     /**

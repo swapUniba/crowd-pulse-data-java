@@ -11,19 +11,23 @@ import java.util.List;
 public class Connection extends Entity {
 
     private String source;
-    private String displayName;
+    private String username;
     private String deviceId;
     private String contactName;
+    private String contactId;
     private Integer contactedTimes;
     private Integer starred;
     private List<String> contactPhoneNumber;
+    private String type;
+    private boolean share;
 
-    public String getDisplayName() {
-        return displayName;
+
+    public String getUsername() {
+        return username;
     }
 
-    public void setDisplayName(String displayName) {
-        this.displayName = displayName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getDeviceId() {
@@ -72,5 +76,29 @@ public class Connection extends Entity {
 
     public void setSource(String source) {
         this.source = source;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public boolean isShare() {
+        return share;
+    }
+
+    public void setShare(boolean share) {
+        this.share = share;
+    }
+
+    public String getContactId() {
+        return contactId;
+    }
+
+    public void setContactId(String contactId) {
+        this.contactId = contactId;
     }
 }

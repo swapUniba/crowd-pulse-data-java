@@ -39,7 +39,10 @@ public class Message extends Entity {
     private Integer number_cluster;
     private Integer cluster_kmeans;
     private String emotion;
-
+    private String[] images;
+    private long likes;
+    private int comments;
+    private String location;
 
     /**
      * Get the original ID of the Message, according to the original source (Twitter, Facebook,
@@ -453,5 +456,37 @@ public class Message extends Entity {
 
     public void setStory(String story) {
         this.story = story;
+    }
+
+    public String[] getImages() {
+        return images;
+    }
+
+    public void setImages(String[] images) {
+        this.images = images;
+    }
+
+    public long getLikes() {
+        return likes;
+    }
+
+    public void setLikes(long likes) {
+        this.likes = likes;
+    }
+
+    public int getComments() {
+        return comments;
+    }
+
+    public void setComments(int comments) {
+        this.comments = comments;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }
